@@ -4,7 +4,7 @@ datadir: data
 hierarchy:
   - name: "Operating System Family"
     backend: yaml
-    path: "%{facts.os.family}"
+    path: "%{facts.os.family}-%{operatingsystemmajrelease}"
 
   - name: "common"
     backend: yaml
